@@ -38,7 +38,7 @@ const displayMovie = (movie) => {
     poster.src = movie.poster;
     poster.addEventListener('load', showMovie);
   } else {
-    poster.src = '';
+    poster.src = '#';
     showMovie();
   }
 };
