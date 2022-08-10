@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Finder</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -16,27 +16,26 @@
     <form action="#">
       <input
         type="text"
-        id="movie-title-input"
+        id="title-input"
         placeholder="Find A Movie"
         autocomplete="off"
-        required
       />
       <button type="submit" class="material-symbols-outlined">search</button>
     </form>
-    <main>
+    <main class="hidden">
       <h1 id="title"></h1>
       <div id="info">
         <p id="year"></p>
         <p>•</p>
-        <p id="rating"></p>
+        <p id="rated"></p>
         <p>•</p>
         <p id="runtime"></p>
         <p>•</p>
-        <p id="review"></p>
+        <p id="rating"></p>
       </div>
-      <img src="#" id="poster" />
+      <img src="#" alt="N/A" id="poster" />
       <p id="plot"></p>
     </main>
-    <div class="loader hidden"></div>
+    <div id="loader"></div>
   </body>
 </html>
